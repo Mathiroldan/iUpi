@@ -8,7 +8,7 @@ st.set_page_config(page_title="Dashboard Financiero", layout="wide")
 # Función para cargar datos
 @st.cache_data
 def load_data():
-    data = pd.read_xlsx("Data_finanzas_personales.xlsx")  # Cambia con tu archivo de datos
+    data = pd.read_excel("nombre_correcto.xlsx")   # Cambia con tu archivo de datos
     data['fecha'] = pd.to_datetime(data['fecha'])
     return data
 
